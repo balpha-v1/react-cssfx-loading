@@ -16,7 +16,11 @@ Original Design and Code: [https://cssfx.netlify.app/](https://cssfx.netlify.app
 
 ```javascript
 // Import Components
-import { BarWave, BouncingBalls, CircularProgress, Coin, FadingBalls, FadingDots, FillingBottle, FlippingSquare, Hypnosis, Messaging, Ring, Spin, SpinStretch, TwinSpin } from "react-cssfx-loading";
+
+// Worse way
+import { BarWave } from "react-cssfx-loading";
+// Better way to reduce bundle size
+import BarWave from "react-cssfx-loading/lib/components/BarWave";
 
 // Render
 <BarWave />
