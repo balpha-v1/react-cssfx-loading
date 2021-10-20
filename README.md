@@ -20,7 +20,7 @@ Original Design and Code: [https://cssfx.netlify.app/](https://cssfx.netlify.app
 // Worse way
 import { BarWave } from "react-cssfx-loading";
 // Better way to reduce bundle size
-import BarWave from "react-cssfx-loading/lib/components/BarWave";
+import BarWave from "react-cssfx-loading/lib/BarWave";
 
 // Render
 <BarWave />
