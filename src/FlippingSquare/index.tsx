@@ -1,5 +1,6 @@
+import "../../css/FlippingSquare.css";
+
 import React from "react";
-import Styles from "./FlippingSquare.module.css";
 
 interface FlippingSquareProps {
   className?: string;
@@ -9,10 +10,30 @@ interface FlippingSquareProps {
   duration?: string;
 }
 
-const FlippingSquare: React.FC<FlippingSquareProps & React.HTMLProps<HTMLDivElement>> = ({ className = "", color = "#0d6efd", width = "2em", height = "2em", style, duration = "1s", ...others }) => {
+const FlippingSquare: React.FC<
+  FlippingSquareProps & React.HTMLProps<HTMLDivElement>
+> = ({
+  className = "",
+  color = "#0d6efd",
+  width = "2em",
+  height = "2em",
+  style,
+  duration = "1s",
+  ...others
+}) => {
   return (
-    <div {...others} style={{ ...style, ["--width" as any]: width, ["--height" as any]: height, ["--color" as any]: color, ["--duration" as any]: duration }} className={`${Styles.box} ${className}`}>
-      <div className={Styles.plane}></div>
+    <div
+      {...others}
+      style={{
+        ...style,
+        ["--width" as any]: width,
+        ["--height" as any]: height,
+        ["--color" as any]: color,
+        ["--duration" as any]: duration,
+      }}
+      className={`cssfx-flipping-square-box ${className}`}
+    >
+      <div className="cssfx-flipping-square-plane"></div>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import "../../css/Coin.css";
 import React from "react";
 interface CoinProps {
     className?: string;

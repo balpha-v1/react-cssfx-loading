@@ -1,13 +1,13 @@
-.filling-bottle {
+.cssfx-filling-bottle {
   position: relative;
   width: var(--width);
   height: var(--height);
   border: 3px solid var(--color);
   overflow: hidden;
-  animation: spin var(--duration) ease infinite;
+  animation: cssfx-filling-bottle-spin var(--duration) ease infinite;
 }
 
-.filling-bottle::before {
+.cssfx-filling-bottle::before {
   content: "";
   position: absolute;
   top: -3px;
@@ -18,17 +18,17 @@
   opacity: 0.75;
   transform-origin: center bottom;
   transform: scaleY(1);
-  animation: fill var(--duration) linear infinite;
+  animation: cssfx-filling-bottle-fill var(--duration) linear infinite;
 }
 
-@keyframes spin {
+@keyframes cssfx-filling-bottle-spin {
   50%,
   100% {
     transform: rotate(360deg);
   }
 }
 
-@keyframes fill {
+@keyframes cssfx-filling-bottle-fill {
   25%,
   50% {
     transform: scaleY(0);

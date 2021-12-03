@@ -1,3 +1,4 @@
+import "../../css/Messaging.css";
 import React from "react";
 interface MessagingProps {
     className?: string;

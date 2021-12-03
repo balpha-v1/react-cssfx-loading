@@ -1,5 +1,6 @@
+import "../../css/BouncingBalls.css";
+
 import React from "react";
-import Styles from "./BouncingBalls.module.css";
 
 interface BouncingBallsProps {
   className?: string;
@@ -9,9 +10,29 @@ interface BouncingBallsProps {
   duration?: string;
 }
 
-const BouncingBalls: React.FC<BouncingBallsProps & React.HTMLProps<HTMLDivElement>> = ({ className = "", color = "#0d6efd", width = "0.8em", height = "0.8em", duration = "0.4s", style, ...others }) => {
+const BouncingBalls: React.FC<
+  BouncingBallsProps & React.HTMLProps<HTMLDivElement>
+> = ({
+  className = "",
+  color = "#0d6efd",
+  width = "0.8em",
+  height = "0.8em",
+  duration = "0.4s",
+  style,
+  ...others
+}) => {
   return (
-    <div {...others} style={{ ...style, ["--width" as any]: width, ["--height" as any]: height, ["--color" as any]: color, ["--duration" as any]: duration }} className={`${Styles["balls"]} ${className}`}>
+    <div
+      {...others}
+      style={{
+        ...style,
+        ["--width" as any]: width,
+        ["--height" as any]: height,
+        ["--color" as any]: color,
+        ["--duration" as any]: duration,
+      }}
+      className={`cssfx-bouncing-balls ${className}`}
+    >
       <div></div>
       <div></div>
       <div></div>

@@ -1,3 +1,4 @@
+import "../../css/SpinStretch.css";
 import React from "react";
 interface SpinStretchProps {
     className?: string;

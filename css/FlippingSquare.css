@@ -1,16 +1,16 @@
-.box {
+.cssfx-flipping-square-box {
   perspective: 120px;
 }
 
-.plane {
+.cssfx-flipping-square-plane {
   width: var(--width);
   height: var(--height);
   background-color: var(--color);
   transform: rotate(0);
-  animation: flip var(--duration) infinite;
+  animation: cssfx-flipping-square-flip var(--duration) infinite;
 }
 
-@keyframes flip {
+@keyframes cssfx-flipping-square-flip {
   50% {
     transform: rotateY(180deg);
   }

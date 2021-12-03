@@ -1,3 +1,4 @@
+import "../../css/BarWave.css";
 import React from "react";
 interface BarWaveProps {
     className?: string;

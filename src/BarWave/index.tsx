@@ -1,5 +1,6 @@
+import "../../css/BarWave.css";
+
 import React from "react";
-import Styles from "./BarWave.module.css";
 
 interface BarWaveProps {
   className?: string;
@@ -9,9 +10,27 @@ interface BarWaveProps {
   duration?: string;
 }
 
-const BarWave: React.FC<BarWaveProps & React.HTMLProps<HTMLDivElement>> = ({ className = "", color = "#0d6efd", width = "2em", height = "1em", style, duration = "1s", ...others }) => {
+const BarWave: React.FC<BarWaveProps & React.HTMLProps<HTMLDivElement>> = ({
+  className = "",
+  color = "#0d6efd",
+  width = "2em",
+  height = "1em",
+  style,
+  duration = "1s",
+  ...others
+}) => {
   return (
-    <div {...others} style={{ ...style, ["--width" as any]: width, ["--height" as any]: height, ["--color" as any]: color, ["--duration" as any]: duration }} className={`${Styles["bar-wave"]} ${className}`}>
+    <div
+      {...others}
+      style={{
+        ...style,
+        ["--width" as any]: width,
+        ["--height" as any]: height,
+        ["--color" as any]: color,
+        ["--duration" as any]: duration,
+      }}
+      className={`cssfx-bar-wave ${className}`}
+    >
       <span></span>
       <span></span>
       <span></span>

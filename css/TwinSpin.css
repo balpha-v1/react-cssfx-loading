@@ -1,4 +1,4 @@
-.twin-spin {
+.cssfx-twin-spin {
   display: flex;
   width: var(--width);
   height: var(--height);
@@ -6,10 +6,10 @@
   border-top-color: var(--color);
   border-bottom-color: var(--color);
   border-radius: 50%;
-  animation: spin 1.5s linear infinite;
+  animation: cssfx-twin-spin 1.5s linear infinite;
 }
 
-.twin-spin:before {
+.cssfx-twin-spin:before {
   content: "";
   display: block;
   margin: auto;
@@ -17,16 +17,17 @@
   height: calc(var(--width) * 0.75 / 3.5);
   border: 3px solid var(--color);
   border-radius: 50%;
-  animation: pulse var(--duration) alternate ease-in-out infinite;
+  animation: cssfx-twin-spin-pulse var(--duration) alternate ease-in-out
+    infinite;
 }
 
-@keyframes spin {
+@keyframes cssfx-twin-spin {
   to {
     transform: rotate(360deg);
   }
 }
 
-@keyframes pulse {
+@keyframes cssfx-twin-spin-pulse {
   from {
     transform: scale(0.5);
   }

@@ -1,3 +1,4 @@
+import "../../css/BouncingBalls.css";
 import React from "react";
 interface BouncingBallsProps {
     className?: string;

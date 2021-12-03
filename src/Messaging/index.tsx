@@ -1,5 +1,6 @@
+import "../../css/Messaging.css";
+
 import React from "react";
-import Styles from "./Messaging.module.css";
 
 interface MessagingProps {
   className?: string;
@@ -9,9 +10,27 @@ interface MessagingProps {
   duration?: string;
 }
 
-const Messaging: React.FC<MessagingProps & React.HTMLProps<HTMLDivElement>> = ({ className = "", color = "#0d6efd", width = "0.8em", height = "0.8em", duration = "0.6s", style, ...others }) => {
+const Messaging: React.FC<MessagingProps & React.HTMLProps<HTMLDivElement>> = ({
+  className = "",
+  color = "#0d6efd",
+  width = "0.8em",
+  height = "0.8em",
+  duration = "0.6s",
+  style,
+  ...others
+}) => {
   return (
-    <div {...others} style={{ ...style, ["--width" as any]: width, ["--height" as any]: height, ["--color" as any]: color, ["--duration" as any]: duration }} className={`${Styles["balls"]} ${className}`}>
+    <div
+      {...others}
+      style={{
+        ...style,
+        ["--width" as any]: width,
+        ["--height" as any]: height,
+        ["--color" as any]: color,
+        ["--duration" as any]: duration,
+      }}
+      className={`cssfx-messaging-balls ${className}`}
+    >
       <div></div>
       <div></div>
       <div></div>

@@ -1,3 +1,4 @@
+import "../../css/FadingDots.css";
 import React from "react";
 interface FadingDotsProps {
     className?: string;

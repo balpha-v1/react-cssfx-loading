@@ -1,3 +1,4 @@
+import "../../css/TwinSpin.css";
 import React from "react";
 interface TwinSpinProps {
     className?: string;

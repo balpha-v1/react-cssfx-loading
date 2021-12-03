@@ -1,3 +1,4 @@
+import "../../css/FlippingSquare.css";
 import React from "react";
 interface FlippingSquareProps {
     className?: string;

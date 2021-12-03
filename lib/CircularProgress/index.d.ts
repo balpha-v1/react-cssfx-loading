@@ -1,3 +1,4 @@
+import "../../css/CircularProgress.css";
 import React from "react";
 interface CircularProgressProps {
     className?: string;
