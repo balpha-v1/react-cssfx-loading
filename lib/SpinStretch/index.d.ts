@@ -1,5 +1,5 @@
+/// <reference types="react" />
 import "../../css/SpinStretch.css";
-import React from "react";
 interface SpinStretchProps {
     className?: string;
     color?: string;

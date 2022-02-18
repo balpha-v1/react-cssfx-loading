@@ -1,5 +1,5 @@
+/// <reference types="react" />
 import "../../css/Ring.css";
-import React from "react";
 interface RingProps {
     className?: string;
     color?: string;

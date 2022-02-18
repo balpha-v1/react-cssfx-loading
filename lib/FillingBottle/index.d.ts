@@ -1,5 +1,5 @@
+/// <reference types="react" />
 import "../../css/FillingBottle.css";
-import React from "react";
 interface FillingBottleProps {
     className?: string;
     color?: string;

@@ -1,5 +1,5 @@
+/// <reference types="react" />
 import "../../css/Coin.css";
-import React from "react";
 interface CoinProps {
     className?: string;
     color?: string;

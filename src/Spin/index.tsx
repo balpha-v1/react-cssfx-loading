@@ -1,7 +1,5 @@
 import "../../css/Spin.css";
 
-import React from "react";
-
 interface SpinProps {
   className?: string;
   color?: string;

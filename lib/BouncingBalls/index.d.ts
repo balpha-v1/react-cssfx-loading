@@ -1,5 +1,5 @@
+/// <reference types="react" />
 import "../../css/BouncingBalls.css";
-import React from "react";
 interface BouncingBallsProps {
     className?: string;
     color?: string;

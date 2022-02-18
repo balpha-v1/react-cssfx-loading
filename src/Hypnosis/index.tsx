@@ -1,7 +1,5 @@
 import "../../css/Hypnosis.css";
 
-import React from "react";
-
 interface HypnosisProps {
   className?: string;
   color?: string;
